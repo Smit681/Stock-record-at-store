@@ -1,0 +1,268 @@
+1)  Sample output from materials
+
+***************** Seneca Groceries - Opening Stock *****************
+====================================================================
+ID  Product               Category      Price   Quantity
+ 1  broccoli              produce       1.99       21
+ 2  potato                produce       1.50       21
+ 3  carrots               produce       1.50        3
+ 4  steak                 meat         12.99       10
+ 5  Italian sausage       meat          9.50        2
+ 6  2% milk               dairy         4.99        2
+ 7  coffee cream          dairy         3.99        2
+ 8   white bread          bakery        3.99        2
+ 9  chocolate cup cakes   bakery        4.99        5
+10  all purpose flour     baking        4.99       10
+11  whole wheat flour     baking        5.99        8
+12  raisins               baking        2.99        5
+13  scrub pads            house wares   0.99        2
+14  laundry detergent     miscellaneous 13.95        4
+
+************************ Now in Sales Mode ************************
+====================================================================
+Enter a product ID to purchase, and the quantity (0 to stop): 1,2
+Enter a product ID to purchase, and the quantity (0 to stop): 20,3
+Invalid Product - Enter a number between 0 and 14: 2,200
+Invalid quantity - Enter a number between 0.10 and 100.00: 2,2
+Enter a product ID to purchase, and the quantity (0 to stop): 3,2
+Enter a product ID to purchase, and the quantity (0 to stop): 4,1
+Enter a product ID to purchase, and the quantity (0 to stop): 6,3
+Enter a product ID to purchase, and the quantity (0 to stop): 8,1
+Enter a product ID to purchase, and the quantity (0 to stop): 0
+broccoli                     1.99    3.98
+potato                       1.50    3.00
+carrots                      1.50    3.00
+steak                       12.99   12.99
+2% milk                      4.99    9.98
+ white bread                 3.99    3.99
+Purchase total      36.94
+Tax:                0.00
+Total:              36.94
+Thank you for shopping at Seneca!
+
+Enter a product ID to purchase, and the quantity (0 to stop): 5,2
+Enter a product ID to purchase, and the quantity (0 to stop): 7,1
+Enter a product ID to purchase, and the quantity (0 to stop): 10,2
+Enter a product ID to purchase, and the quantity (0 to stop): 14,1
+Enter a product ID to purchase, and the quantity (0 to stop): 0
+Italian sausage              9.50   19.00
+coffee cream                 3.99    3.99
+all purpose flour            4.99    9.98
+laundry detergent           13.95   13.95
+Purchase total      46.92
+Tax:                1.81
+Total:              48.73
+Thank you for shopping at Seneca!
+
+Enter a product ID to purchase, and the quantity (0 to stop): 0
+
+************************ End of Day Summary ************************
+====================================================================
+    Cost of items sold before taxes   83.86
+                    Number of Sales       2
+             Average items per sale    5.00
+
+
+************************** Closing Stock **************************
+====================================================================
+ID  Product               Category      Price   Quantity
+ 1  broccoli              produce       1.99       19
+ 2  potato                produce       1.50       19
+ 3  carrots               produce       1.50        1
+ 4  steak                 meat         12.99        9
+ 5  Italian sausage       meat          9.50        0
+ 6  2% milk               dairy         4.99        0
+ 7  coffee cream          dairy         3.99        1
+ 8   white bread          bakery        3.99        1
+ 9  chocolate cup cakes   bakery        4.99        5
+10  all purpose flour     baking        4.99        8
+11  whole wheat flour     baking        5.99        8
+12  raisins               baking        2.99        5
+13  scrub pads            house wares   0.99        2
+14  laundry detergent     miscellaneous 13.95        3
+
+------------Top 3 sellors in produce------------
+Rank  product               Sales
+   1  broccoli              2.00
+   2  potato                2.00
+   3  carrots               2.00
+------------Top 3 sellors in bakery------------
+Rank  product               Sales
+   1   white bread          1.00
+   2  <none>                0.00
+   3  <none>                0.00
+-------------Top 3 sellors in meat-------------
+Rank  product               Sales
+   1  Italian sausage       2.00
+   2  steak                 1.00
+   3  <none>                0.00
+-------------Top 3 sellors in dairy-------------
+Rank  product               Sales
+   1  2% milk               2.00
+   2  coffee cream          1.00
+   3  <none>                0.00
+------------Top 3 sellors in baking------------
+Rank  product               Sales
+   1  all purpose flour     2.00
+   2  <none>                0.00
+   3  <none>                0.00
+----------Top 3 sellors in house wares----------
+Rank  product               Sales
+   1  <none>                0.00
+   2  <none>                0.00
+---------Top 3 sellors in miscellaneous---------
+Rank  product               Sales
+   1  laundry detergent     1.00
+   2  <none>                0.00
+
+C:\Users\smit6\source\repos\Final assessment\Debug\Final assessment.exe (process 43640) exited with code 0.
+Press any key to close this window . . .
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2) Additional checking critaria. This output is cheching some more strengths of program. For examle, it shows that code is able to sale same product more then once, if user enter more than available quantity then program sells and cost only for available quantity, if user enters char or any other undesired input then program wont take it and ask user again to enter with proper error message and many more.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+***************** Seneca Groceries - Opening Stock *****************
+====================================================================
+ID  Product               Category      Price   Quantity
+ 1  broccoli              produce       1.99       21
+ 2  potato                produce       1.50       21
+ 3  carrots               produce       1.50        3
+ 4  steak                 meat         12.99       10
+ 5  Italian sausage       meat          9.50        2
+ 6  2% milk               dairy         4.99        2
+ 7  coffee cream          dairy         3.99        2
+ 8   white bread          bakery        3.99        2
+ 9  chocolate cup cakes   bakery        4.99        5
+10  all purpose flour     baking        4.99       10
+11  whole wheat flour     baking        5.99        8
+12  raisins               baking        2.99        5
+13  scrub pads            house wares   0.99        2
+14  laundry detergent     miscellaneous 13.95        4
+
+************************ Now in Sales Mode ************************
+====================================================================
+Enter a product ID to purchase, and the quantity (0 to stop): one,3
+Invalid Product - Enter a number between 0 and 14: 3,one.two
+Invalid quantity - Enter a number between 0.10 and 100.00: 3,400
+Invalid quantity - Enter a number between 0.10 and 100.00: 1,15
+Enter a product ID to purchase, and the quantity (0 to stop): 2,10
+Enter a product ID to purchase, and the quantity (0 to stop): 3,3
+Enter a product ID to purchase, and the quantity (0 to stop): 4,15
+Enter a product ID to purchase, and the quantity (0 to stop): 5,2
+Enter a product ID to purchase, and the quantity (0 to stop): 0
+broccoli                     1.99   29.85
+potato                       1.50   15.00
+carrots                      1.50    4.50
+steak                       12.99  129.90
+Italian sausage              9.50   19.00
+Purchase total      198.25
+Tax:                0.00
+Total:              198.25
+Thank you for shopping at Seneca!
+
+Enter a product ID to purchase, and the quantity (0 to stop): 2,5
+Enter a product ID to purchase, and the quantity (0 to stop): 8,1
+Enter a product ID to purchase, and the quantity (0 to stop): 19,4
+Invalid Product - Enter a number between 0 and 14: 12,4
+Enter a product ID to purchase, and the quantity (0 to stop): 14,2
+Enter a product ID to purchase, and the quantity (0 to stop): 13,1
+Enter a product ID to purchase, and the quantity (0 to stop): 0
+potato                       1.50    7.50
+ white bread                 3.99    3.99
+raisins                      2.99   11.96
+laundry detergent           13.95   27.90
+scrub pads                   0.99    0.99
+Purchase total      52.34
+Tax:                1.94
+Total:              54.28
+Thank you for shopping at Seneca!
+
+Enter a product ID to purchase, and the quantity (0 to stop): 10,2
+Enter a product ID to purchase, and the quantity (0 to stop): 11,4
+Enter a product ID to purchase, and the quantity (0 to stop): 12,1
+Enter a product ID to purchase, and the quantity (0 to stop): 0
+all purpose flour            4.99    9.98
+whole wheat flour            5.99   23.96
+raisins                      2.99    2.99
+Purchase total      36.93
+Tax:                0.00
+Total:              36.93
+Thank you for shopping at Seneca!
+
+Enter a product ID to purchase, and the quantity (0 to stop): 0
+
+************************ End of Day Summary ************************
+====================================================================
+    Cost of items sold before taxes  287.52
+                    Number of Sales       3
+             Average items per sale    4.33
+
+
+************************** Closing Stock **************************
+====================================================================
+ID  Product               Category      Price   Quantity
+ 1  broccoli              produce       1.99        6
+ 2  potato                produce       1.50        6
+ 3  carrots               produce       1.50        0
+ 4  steak                 meat         12.99        0
+ 5  Italian sausage       meat          9.50        0
+ 6  2% milk               dairy         4.99        2
+ 7  coffee cream          dairy         3.99        2
+ 8   white bread          bakery        3.99        1
+ 9  chocolate cup cakes   bakery        4.99        5
+10  all purpose flour     baking        4.99        8
+11  whole wheat flour     baking        5.99        4
+12  raisins               baking        2.99        0
+13  scrub pads            house wares   0.99        1
+14  laundry detergent     miscellaneous 13.95        2
+
+------------Top 3 sellors in produce------------
+Rank  product               Sales
+   1  broccoli              15.00
+   2  potato                5.00
+   3  carrots               3.00
+------------Top 3 sellors in bakery------------
+Rank  product               Sales
+   1   white bread          1.00
+   2  <none>                0.00
+   3  <none>                0.00
+-------------Top 3 sellors in meat-------------
+Rank  product               Sales
+   1  steak                 10.00
+   2  Italian sausage       2.00
+   3  <none>                0.00
+-------------Top 3 sellors in dairy-------------
+Rank  product               Sales
+   1  <none>                0.00
+   2  <none>                0.00
+   3  <none>                0.00
+------------Top 3 sellors in baking------------
+Rank  product               Sales
+   1  whole wheat flour     4.00
+   2  all purpose flour     2.00
+   3  raisins               1.00
+----------Top 3 sellors in house wares----------
+Rank  product               Sales
+   1  scrub pads            1.00
+   2  <none>                0.00
+---------Top 3 sellors in miscellaneous---------
+Rank  product               Sales
+   1  laundry detergent     2.00
+   2  <none>                0.00
+
+C:\Users\smit6\source\repos\Final assessment\Debug\Final assessment.exe (process 38340) exited with code 0.
+Press any key to close this window . . .
+
+
+ 
+
+
+
+
